@@ -12,16 +12,20 @@
 
 <body>
     <header class="cabecalho">
+        
+
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
             <a class="cabecalho__menu__link" href="#sobre-mim">Sobre mim</a>
-            <!-- <a class="cabecalho__menu__link" href="#habilidades">Habilidades</a> -->
+            <a class="cabecalho__menu__link" href="#habilidades">Habilidades</a> 
+            <a class="cabecalho__menu__link" href="#projetos">Meus Projetos</a> 
+            <a class="cabecalho__menu__link" href="#contato">Contatos</a> 
         </nav>
     </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__conteudo__titulo">Hello!! I'm
-                <strong class="titulo-destaque"> Táglya Freitas
+                <strong class="titulo-destaque"> Taglya Freitas
                 </strong>
             </h1>
             <p class="apresentacao__conteudo__texto" p>
@@ -41,7 +45,7 @@
                     <img src="./assets/twitch.png">
                     Twitch -->
 
-                <a class="apresentacao__links__navegacao" href="https://twitch.tv/guilimadev">
+                <a class="apresentacao__links__navegacao" href="https://wa.me/5598982858825?text=Ol%C3%A1">
                     <i class="fa-brands fa-whatsapp" style="color: #EBD3F8"></i>
                     Whatsapp
                 </a>
@@ -67,7 +71,7 @@
         <img class="apresentacao__imagem__secundaria" src="./assets/imagem.2.png" alt="Foto da Táglya Freitas">
     </div class="apresentacao">
 
-    <section class="habilidades-section">
+    <section class="habilidades-section" id="habilidades">
         <h1 class="apresentacao__conteudo__titulo__3">Habilidades</h1>
         <div class="carousel-container">
             <div class="carousel-track">
@@ -133,6 +137,9 @@
                     <h3>Power BI</h3>
                 </div>
             </div>
+             <a class="apresentacao_linksnavegacao_3" href="https://cursos.alura.com.br/user/taglya-soares/fullCertificate/5afc29fa7ead17a8745d2244c314d262">
+                <button class="apresentacao__conteudo__botao">Certificado</button>
+            </a>
         </div>
     </section>
 
@@ -144,27 +151,30 @@
         <img src="./assets/SKU-HeartPulse.png" alt="Projeto 1" class=" projetos__imagem">    
         <h3 class="info__projetos">SKU</h3>
         <p class="paragrafo-projetos">Dashboard interativo para análise de dados de inscrições em um programa de capacitação, com filtros por município, trilha de aprendizado, perfil demográfico e ocupação, proporcionando insights para a gestão do programa.
-</p>
+        <a class="link" href="https://etica-taglya.my.canva.site/copy-of-pitch-heartpulse">Saiba mais</a>
+        </p>
     </div>
 
     <div class="projetos__card">
         <img src="./assets/Ética nas Relações de trabalho.png" alt="Projeto 1" class=" projetos__imagem">    
         <h3 class="info__projetos">Ética nas Relações de trabalho</h3>
-        <p class="paragrafo-projetos">Dashboard interativo para análise de dados de inscrições em um programa de capacitação, com filtros por município, trilha de aprendizado, perfil demográfico e ocupação, proporcionando insights para a gestão do programa.
-</p>
+        <p class="paragrafo-projetos">O projeto explora a importância da ética nas relações de trabalho, explorando como práticas éticas como compliance, integridade e responsabilidade social corporativa são essenciais para criar ambientes organizacionais saudáveis e sustentáveis.
+        <a class="link" href="https://etica-taglya.my.canva.site/">Saiba mais</a>
+    </p>
     </div>
 
     <div class="projetos__card">
         <img src="./assets/Desafio III - Trilha de Dados.png" alt="Projeto 1" class=" projetos__imagem">    
         <h3 class="info__projetos">Dashboard</h3>
         <p class="paragrafo-projetos">Dashboard interativo para análise de dados de inscrições em um programa de capacitação, com filtros por município, trilha de aprendizado, perfil demográfico e ocupação, proporcionando insights para a gestão do programa.
-</p>
+        <a class="link" href="https://lookerstudio.google.com/s/vDFhJ5370h4">Saiba mais</a>
+        </p>
     </div>
 
         </div>
     </section>
 
-    <section class="contato">
+    <section class="contato" id="contato">
         <div class="particles" id="particles"></div>
         
         <div class="contato__container">
@@ -239,7 +249,7 @@
             
             // Criar mensagem para WhatsApp
             const whatsappMessage = `Olá! Meu nome é ${nome}.%0A%0AAssunto: ${assunto}%0A%0AMensagem: ${mensagem}%0A%0AMeu email: ${email}`;
-            const whatsappURL = `https://wa.me/5511999999999?text=${whatsappMessage}`;
+            const whatsappURL = `https://wa.me/5598982858825?text=Ol%C3%A1%20Táglya!%0A%0A${whatsappMessage}`;
             
             // Abrir WhatsApp
             window.open(whatsappURL, '_blank');
@@ -326,6 +336,7 @@
         <footer class="rodape">
         <p>Desenvolvido por Taglya Freitas.</p>
     </footer>
+    <script src="menu.js"></script>
 </body>
 
 </html>
