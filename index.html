@@ -11,8 +11,13 @@
 </head>
 
 <body>
-   <header class="cabecalho" id="cabecalho">
+    <header class="cabecalho" id="cabecalho">
         <div class="cabecalho__container">
+            <button class="cabecalho__menu__hamburger" id="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav class="cabecalho__menu" id="menu">
                 <a class="cabecalho__menu__link active" href="#home" data-section="home">Home</a>
                 <a class="cabecalho__menu__link" href="#sobre-mim" data-section="sobre-mim">Sobre mim</a>
@@ -20,18 +25,17 @@
                 <a class="cabecalho__menu__link" href="#projetos" data-section="projetos">Meus Projetos</a>
                 <a class="cabecalho__menu__link" href="#contato" data-section="contato">Contatos</a>
             </nav>
-            
         </div>
     </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
-         <div>
-            <h1 class="apresentacao__conteudo__titulo">Hello, I'm
-                <strong class="titulo-destaque"> Taglya Freitas!
-                </strong>
-            </h1>
+            <div>
+                <h1 class="apresentacao__conteudo__titulo">Hello, I'm
+                    <strong class="titulo-destaque"> Taglya Freitas!
+                    </strong>
+                </h1>
             </div>
-            <p class="apresentacao__conteudo__texto" p>
+            <p class="apresentacao__conteudo__texto">
             <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
             <div class="apresentacao__links">
 
@@ -44,48 +48,43 @@
                     linkedin
                 </a>
 
-                <!--   <a class="apresentacao__links__navegacao" href="https://twitch.tv/guilimadev"> 
-                    <img src="./assets/twitch.png">
-                    Twitch -->
-
                 <a class="apresentacao__links__navegacao" href="https://wa.me/5598982858825?text=Ol%C3%A1">
                     <i class="fa-brands fa-whatsapp" style="color: #EBD3F8"></i>
                     Whatsapp
                 </a>
             </div>
         </section>
-        <img class="apresentacao__imagem" src="https://i.ibb.co/8nJ9B7F0/foto-de-perfil.png" alt="Foto da Táglya Freitas">
+        <img class="apresentacao__imagem" src="https://i.ibb.co/8nJ9B7F0/foto-de-perfil.png"
+            alt="Foto da Táglya Freitas">
     </main>
-
 
     <div class="apresentacao">
         <section class="apresentacao__conteudo" id="sobre-mim">
             <h1 class="apresentacao__conteudo__titulo2">Sobre mim</h1>
             <p class="apresentacao__conteudo__texto">
-              Olá, sou Táglya Sousa de Freitas, estudante de Administração no Centro Universitário Santa Terezinha - CEST,
-               com foco em análise de dados e tecnologia.
-               Participo dos programas Jovem Tech e Trilhas Inova Maranhão, onde venho desenvolvendo habilidades
-               práticas em ciência de dados e visualização de informações.
+                Olá, sou Táglya Sousa de Freitas, estudante de Administração no Centro Universitário Santa Terezinha -
+                CEST,
+                com foco em análise de dados e tecnologia.
+                Participo dos programas Jovem Tech e Trilhas Inova Maranhão, onde venho desenvolvendo habilidades
+                práticas em ciência de dados e visualização de informações.
             </p>
             <p class="apresentacao__conteudo__texto">
-                Minha experiência inclui rotinas administrativas e o uso de ferramentas avançadas como Power BI 
+                Minha experiência inclui rotinas administrativas e o uso de ferramentas avançadas como Power BI
                 e dashboards, com foco na criação de soluções analíticas que impulsionam a tomada de decisões
                 estratégicas. Estou em constante busca por oportunidades que me permitam aplicar a análise de
-                dados de maneira inovadora, gerando resultados que promovam eficiência, transformação digital e 
+                dados de maneira inovadora, gerando resultados que promovam eficiência, transformação digital e
                 inovação nos processos organizacionais.
             </p>
         </section>
         <img class="apresentacao__imagem__secundaria" src="./assets/imagem.2.png" alt="Foto da Táglya Freitas">
-    </div class="apresentacao">
+    </div>
 
     <section class="habilidades-section" id="habilidades">
         <h1 class="apresentacao__conteudo__titulo__3">Habilidades</h1>
         <div class="carousel-container">
             <div class="carousel-track">
-                <!-- Primeiro conjunto -->
                 <div class="carousel-item">
                     <img src="./assets/html5-line.svg" alt="HTML5">
-
                     <h3>HTML5</h3>
                 </div>
                 <div class="carousel-item">
@@ -113,10 +112,8 @@
                     <h3>Power BI</h3>
                 </div>
 
-                <!-- Segundo conjunto para loop infinito -->
                 <div class="carousel-item">
                     <img src="./assets/html5-line.svg" alt="HTML5">
-
                     <h3>HTML5</h3>
                 </div>
                 <div class="carousel-item">
@@ -144,13 +141,13 @@
                     <h3>Power BI</h3>
                 </div>
             </div>
-             <a class="apresentacao_linksnavegacao_3" href="https://cursos.alura.com.br/user/taglya-soares/fullCertificate/5afc29fa7ead17a8745d2244c314d262">
+            <a class="apresentacao_linksnavegacao_3"
+                href="https://cursos.alura.com.br/user/taglya-soares/fullCertificate/5afc29fa7ead17a8745d2244c314d262">
             </a>
         </div>
         <div>
-             <button class="apresentacao__conteudo__botao">Certificados
-             </button>
-
+            <button class="apresentacao__conteudo__botao">Certificados
+            </button>
         </div>
     </section>
 
@@ -158,87 +155,76 @@
         <h2 class="projetos__titulo">Meus Projetos</h2>
         <div class="projetos__caixas">
 
-        <div class="projetos__card">
-        <img src="./assets/SKU-HeartPulse.png" alt="Projeto 1" class=" projetos__imagem">    
-      <div>
-        <h3 class="info__projetos">SKU</h3>
-        <p class="paragrafo-projetos">A solução visa criar um sistema integrado para gerenciar todo o processo, desde o armazenamento no congelador até a entrega no balcão. O software automatiza o controle de estoque, movimentação dos lotes e rastreabilidade, garantindo maior eficiência e redução de erros.
-        <a class="link" href="https://etica-taglya.my.canva.site/copy-of-pitch-heartpulse">Saiba mais</a>
-        </p>
-        </div>
-    </div>
+            <div class="projetos__card">
+                <img src="./assets/SKU-HeartPulse.png" alt="Projeto 1" class=" projetos__imagem">
+                <div>
+                    <h3 class="info__projetos">SKU</h3>
+                    <p class="paragrafo-projetos">A solução visa criar um sistema integrado para gerenciar todo o
+                        processo, desde o armazenamento no congelador até a entrega no balcão. O software automatiza o
+                        controle de estoque, movimentação dos lotes e rastreabilidade, garantindo maior eficiência e
+                        redução de erros.
+                        <a class="link" href="https://etica-taglya.my.canva.site/copy-of-pitch-heartpulse">Saiba
+                            mais</a>
+                    </p>
+                </div>
+            </div>
 
-    <div class="projetos__card">
-        <img src="./assets/Ética nas Relações de trabalho.png" alt="Projeto 1" class=" projetos__imagem">    
-        <div>
-        <h3 class="info__projetos">Ética nas Relações de trabalho</h3>
-        <p class="paragrafo-projetos">O projeto aborda a importância da ética nas relações de trabalho, destacando práticas como compliance, integridade e responsabilidade social corporativa para ambientes organizacionais saudáveis e sustentáveis.
-        <a class="link" href="https://etica-taglya.my.canva.site/">Saiba mais</a>
-    </p>
-    </div>
-    </div>
+            <div class="projetos__card">
+                <img src="./assets/Ética nas Relações de trabalho.png" alt="Projeto 1" class=" projetos__imagem">
+                <div>
+                    <h3 class="info__projetos">Ética nas Relações de trabalho</h3>
+                    <p class="paragrafo-projetos">O projeto aborda a importância da ética nas relações de trabalho,
+                        destacando práticas como compliance, integridade e responsabilidade social corporativa para
+                        ambientes organizacionais saudáveis e sustentáveis.
+                        <a class="link" href="https://etica-taglya.my.canva.site/">Saiba mais</a>
+                    </p>
+                </div>
+            </div>
 
-    <div class="projetos__card">
-        <img src="./assets/Desafio III - Trilha de Dados.png" alt="Projeto 1" class=" projetos__imagem">    
-        <div>
-        <h3 class="info__projetos">Dashboard</h3>
-        <p class="paragrafo-projetos">Dashboard interativo para análise de dados de inscrições em um programa de capacitação, com filtros por município, trilha de aprendizado, perfil demográfico e ocupação, proporcionando insights para a gestão do programa.
-        <a class="link" href="https://lookerstudio.google.com/s/vDFhJ5370h4">Saiba mais</a>
-        </p>
-        </div>
-    </div>
+            <div class="projetos__card">
+                <img src="./assets/Desafio III - Trilha de Dados.png" alt="Projeto 1" class=" projetos__imagem">
+                <div>
+                    <h3 class="info__projetos">Dashboard</h3>
+                    <p class="paragrafo-projetos">Dashboard interativo para análise de dados de inscrições em um
+                        programa de capacitação, com filtros por município, trilha de aprendizado, perfil demográfico e
+                        ocupação, proporcionando insights para a gestão do programa.
+                        <a class="link" href="https://lookerstudio.google.com/s/vDFhJ5370h4">Saiba mais</a>
+                    </p>
+                </div>
+            </div>
 
         </div>
     </section>
 
     <section class="contato" id="contato">
         <div class="particles" id="particles"></div>
-        
+
         <div class="contato__container">
             <h2 class="contato__titulo fade-in">Entre em Contato</h2>
             <p class="contato__subtitulo fade-in">Vamos conversar sobre projetos e oportunidades!</p>
-            
+
             <div class="contato__content">
-                <!-- Formulário de Contato -->
                 <div class="contato__form fade-in">
                     <h3>Envie uma Mensagem</h3>
-                    
-                    <!-- Mensagem de status -->
+
                     <div id="statusMessage" class="status-message"></div>
-                    
+
                     <form id="contactForm" method="POST" action="https://formspree.io/f/xrblwrov">
                         <div class="form__group">
-                            <input 
-                                type="text" 
-                                class="form__input" 
-                                placeholder="Seu nome completo"
-                                required
-                                id="nome"
-                                name="nome"
-                            >
+                            <input type="text" class="form__input" placeholder="Seu nome completo" required id="nome"
+                                name="nome">
                         </div>
-                        
+
                         <div class="form__group">
-                            <input 
-                                type="email" 
-                                class="form__input" 
-                                placeholder="Seu email"
-                                required
-                                id="email"
-                                name="email"
-                            >
+                            <input type="email" class="form__input" placeholder="Seu email" required id="email"
+                                name="email">
                         </div>
-                        
+
                         <div class="form__group">
-                            <textarea 
-                                class="form__textarea" 
-                                placeholder="Conte-me sobre seu projeto ou ideia..."
-                                required
-                                id="mensagem"
-                                name="mensagem"
-                            ></textarea>
+                            <textarea class="form__textarea" placeholder="Conte-me sobre seu projeto ou ideia..."
+                                required id="mensagem" name="mensagem"></textarea>
                         </div>
-                        
+
                         <button type="submit" class="form__button" id="submitBtn">
                             <i class="fas fa-paper-plane"></i> Enviar Mensagem
                         </button>
@@ -248,12 +234,10 @@
         </div>
     </section>
 
-    <!-- EmailJS SDK -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/emailjs/4.0.0/email.min.js"></script>
-    
+
     <script>
         // Configuração do EmailJS
-        // IMPORTANTE: Substitua pelos seus IDs reais do EmailJS
         const EMAILJS_CONFIG = {
             serviceId: 'SEU_SERVICE_ID',
             templateId: 'SEU_TEMPLATE_ID',
@@ -261,7 +245,7 @@
         };
 
         // Inicializar EmailJS
-        (function() {
+        (function () {
             emailjs.init(EMAILJS_CONFIG.publicKey);
         })();
 
@@ -271,8 +255,7 @@
             statusDiv.textContent = message;
             statusDiv.className = `status-message ${type}`;
             statusDiv.style.display = 'block';
-            
-            // Esconder após 5 segundos se for sucesso
+
             if (type === 'success') {
                 setTimeout(() => {
                     statusDiv.style.display = 'none';
@@ -283,18 +266,16 @@
         // Função para lidar com o envio do formulário via Formspree
         async function handleSubmit(event) {
             event.preventDefault();
-            
+
             const submitBtn = document.querySelector('.form__button');
             const form = document.getElementById('contactForm');
             const statusMessage = document.getElementById('statusMessage');
-            
-            // Desabilitar botão e mostrar loading
+
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<div class="spinner"></div> Enviando...';
-            
-            // Esconder mensagens anteriores
+
             statusMessage.style.display = 'none';
-            
+
             try {
                 const response = await fetch('https://formspree.io/f/xrblwrov', {
                     method: 'POST',
@@ -315,12 +296,10 @@
                         throw new Error('Falha no envio');
                     }
                 }
-
             } catch (error) {
                 console.error('Erro ao enviar:', error);
                 showStatusMessage('❌ Erro ao enviar mensagem. Tente novamente mais tarde.', 'error');
             } finally {
-                // Restaurar botão
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar Mensagem';
             }
@@ -330,7 +309,7 @@
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
             const particleCount = 20;
-            
+
             for (let i = 0; i < particleCount; i++) {
                 const particle = document.createElement('div');
                 particle.className = 'particle';
@@ -356,7 +335,7 @@
             inputs.forEach(input => {
                 const originalPlaceholder = input.placeholder;
                 let isTyping = false;
-                
+
                 input.addEventListener('focus', () => {
                     if (!isTyping && input.value === '') {
                         isTyping = true;
@@ -372,7 +351,7 @@
                         }, 50);
                     }
                 });
-                
+
                 input.addEventListener('blur', () => {
                     if (input.value === '') {
                         input.placeholder = originalPlaceholder;
@@ -381,22 +360,36 @@
             });
         }
 
+        // Adicionando o código do menu hambúrguer para garantir que ele funcione
+        const menuHamburguer = document.getElementById('menu-hamburger');
+        const menu = document.getElementById('menu');
+        const links = document.querySelectorAll('.cabecalho__menu__link');
+
+        if (menuHamburguer && menu) {
+            menuHamburguer.addEventListener('click', () => {
+                menu.classList.toggle('ativo');
+            });
+        }
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('ativo');
+            });
+        });
+
         // Inicializar funcionalidades
         document.addEventListener('DOMContentLoaded', () => {
             createParticles();
             animateOnScroll();
             typewriterEffect();
-            
+
             // Adicionar event listener para o formulário
             document.getElementById('contactForm').addEventListener('submit', handleSubmit);
         });
     </script>
-
-
-        <footer class="rodape">
+    
+    <footer class="rodape">
         <p>Desenvolvido por Taglya Freitas.</p>
     </footer>
-    <script src="menu.js"></script>
 </body>
-
 </html>
