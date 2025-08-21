@@ -788,6 +788,7 @@ body {
     z-index: 1001;
 }
 
+
 .cabecalho__menu__hamburger span {
     display: block;
     width: 25px;
@@ -839,5 +840,141 @@ body {
     .cabecalho__menu__link {
         font-size: 1.5rem;
         margin: 15px 0;
+    }
+}
+
+/* Seu código existente para a responsividade até 768px */
+@media (max-width: 768px) {
+    /* Regras anteriores... */
+}
+
+/* Seu código existente para a responsividade até 480px */
+@media (max-width: 480px) {
+    /* Regras anteriores... */
+}
+
+/* Adicione as novas regras que eu forneci abaixo */
+@media (max-width: 768px) {
+    .apresentacao {
+        padding: 5% 10%; /* Ajustei os padding */
+        flex-wrap: wrap; /* Permite o ajuste dos elementos */
+        gap: 30px; /* Reduzi o gap entre os elementos */
+    }
+
+    .apresentacao__imagem {
+        width: 100%; /* Ajustei para que a imagem ocupe toda a largura disponível */
+        max-width: 300px; /* Limite a largura máxima da imagem */
+    }
+
+    .apresentacao__conteudo {
+        width: 100%; /* Ajustei o conteúdo para ocupar toda a largura */
+        text-align: center;
+    }
+
+    .cabecalho__menu {
+        gap: 20px; /* Reduzi o gap do menu */
+    }
+
+    .cabecalho__menu__link {
+        font-size: 1rem; /* Reduzi o tamanho da fonte para telas menores */
+    }
+
+    .carousel-item {
+        min-width: 150px; /* Reduzi a largura dos itens do carrossel */
+        height: 150px; /* Ajustei a altura para telas menores */
+        margin: 0 8px; /* Ajustei a margem entre os itens */
+    }
+
+    .carousel-track {
+        width: calc(160px * 14); /* Ajustei a largura do carrossel */
+    }
+
+    /* Menu de hambúrguer ajustado para telas menores */
+    .cabecalho__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    background-color: var(--cor-primaria);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.4s ease-in-out;
+    z-index: 1000;
+    gap: 30px;
+}
+
+.cabecalho__menu.ativo {
+    right: 0;
+}
+
+
+    .cabecalho__menu__hamburger {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 1.2rem; /* Ajustei o tamanho da fonte para o menu */
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 3rem; /* Reduzi o tamanho do título para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .apresentacao__imagem {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 1rem; /* Ajustei ainda mais o tamanho da fonte */
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 2rem; /* Reduzi ainda mais o tamanho do título */
+    }
+
+    .projetos__caixas {
+        grid-template-columns: 1fr; /* Para telas pequenas, os cards de projetos ocupam toda a largura */
+    }
+
+    .projetos__card {
+        width: 100%; /* Garante que o card ocupe toda a largura disponível */
+    }
+
+    .carousel-item {
+        min-width: 120px; /* Ajustei para ficar mais compacto */
+        height: 120px; /* Ajustei a altura */
+    }
+
+    .carousel-track {
+        width: calc(130px * 14); /* Ajustei o tamanho do carrossel */
+    }
+
+    .contato__titulo {
+        font-size: 1.8rem;
+    }
+
+    .contato__subtitulo {
+        font-size: 1rem; /* Reduzi o tamanho da fonte */
+    }
+
+    .contato__form {
+        padding: 1.5rem; /* Reduzi o padding para o formulário */
+    }
+
+    .form__input,
+    .form__textarea {
+        font-size: 1rem; /* Reduzi o tamanho da fonte */
+    }
+
+    .form__button {
+        font-size: 1rem; /* Ajustei o tamanho da fonte */
     }
 }
